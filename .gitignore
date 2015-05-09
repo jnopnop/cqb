@@ -1,6 +1,7 @@
 .idea
 
 /vendor
+/runtime
 
 composer.phar
 composer.json
