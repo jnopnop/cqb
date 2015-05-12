@@ -1,5 +1,7 @@
 <?php
 /* @var $this yii\web\View */
+/* @var $events */
+
 $this->title = 'CQB World';
 //$this->registerJsFile('https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=j1A-wYdZyuK-q7-gDXkz1z2k_2yxCNMP&width=600&height=450');
 ?>
@@ -35,6 +37,10 @@ $this->title = 'CQB World';
 <!--    <br>-->
 <!--</div>-->
 <!-- WHO WE ARE -->
+
+<?= \yii2fullcalendar\yii2fullcalendar::widget(array(
+    'events'=> $events,
+)); ?>
 
 <div class="container">
 
