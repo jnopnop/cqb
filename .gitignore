@@ -2,6 +2,7 @@
 
 /vendor
 /runtime
+/tests
 
 composer.phar
 composer.json

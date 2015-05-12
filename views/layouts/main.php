@@ -49,29 +49,36 @@ AppAsset::register($this);
                     ['label' => 'Галерея', 'url' => ['/site/gallery']],
                     ['label' => 'Магазин', 'url' => ['/site/shop']],
                 ],
-//                'items' => [
-//                    ['label' => 'Арена', 'url' => ['/site/index']],
-//                    ['label' => 'About', 'url' => ['/site/about']],
-//                    ['label' => 'Contact', 'url' => ['/site/contact']],
-////                    Yii::$app->user->isGuest ?
-////                        ['label' => 'Login', 'url' => ['/site/login']] :
-////                        ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-////                            'url' => ['/site/logout'],
-////                            'linkOptions' => ['data-method' => 'post']],
-//                ],
             ]);
             NavBar::end();
         ?>
 
         <?= $content ?>
 
-<!--    <footer class="footer">-->
-<!--        <div class="container">-->
-<!--            <p class="pull-left">&copy; My Company --><?//= date('Y') ?><!--</p>-->
-<!--            <p class="pull-right">--><?//= Yii::powered() ?><!--</p>-->
-<!--        </div>-->
-<!--    </footer>-->
-
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4">
+                <img src="/img/logo-big.jpg" class="img-responsive center-block">
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <h4>Мы в Соцсетях</h4>
+                <a href="#"><img src="/img/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="/img/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="/img/linkedin.png" alt="linkedin"></a>
+                <a href="#"><img src="/img/instagram.png" alt="instagram"></a>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <h4>Связь с Нами</h4>
+                <p><b>CQB World Крым</b><br>
+                    <span class="glyphicon glyphicon-map-marker"></span> 295047 Узловая 20, РК РФ <br>
+                    <span class="glyphicon glyphicon-envelope"></span> contact@cqb-world.local<br>
+                    <span class="glyphicon glyphicon-earphone"></span> +7 (978) 878-87-87</p>
+            </div>
+        </div>
+        <p class="copyright">© 2015. Airsoft CQB World Крым</p>
+    </div>
+</footer>
 <?php $this->endBody() ?>
 </body>
 </html>

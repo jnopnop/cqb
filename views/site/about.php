@@ -16,6 +16,8 @@ $this->title = 'About';
 
 <hr>
 
+
+
 <div id="sec1" class="blurb">
     <div class="container">
         <div class="row">

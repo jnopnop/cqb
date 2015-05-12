@@ -6,41 +6,85 @@ $this->title = 'CQB World';
 <!--parallax 1 -->
 <section class="bg-1 text-center">
     <div class="jumbotron">
-        <h1>Airsoft CQB World</h1>
+        <h1>Airsoft Арена</h1>
         <br>
-        <p class="lead">Первая Крымская Арена</p>
+        <p class="lead">Первая Крымская</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Участвовать</a></p>
     </div>
 </section>
 <!--/parallax 1-->
 
 <!-- WHO WE ARE -->
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-12 text-center">-->
+<!--            <h1>Об Арене</h1>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <br/>-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-4">-->
+<!--            <div class="featurette-item">-->
+<!--                <img src="/img/logo-big.jpg" class="img-responsive center-block">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-8">-->
+<!--            <p class="lead">CQB World Crimea - это первая в Крыму страйкбольная база отдыха. CONSECTETUR ADIPISCING ELIT. MAURIS LUCTUS LEO VOLUTPAT MAURIS LUCTUS, EGET RUTRUM SEM EUISMOD. PELLENTESQUE FAUCIBUS PULVINAR NISI, SIT AMET VIVERRA IPSUM PORTTITOR PELLENTESQUE. ALIQUAM PELLENTESQUE FRINGILLA LOBORTIS. PRAESENT NON MAGNA GRAVIDA, VEHICULA NISL AT, ALIQUET LIBERO.</p>-->
+<!--        </div>-->
+<!--    </div><!--/row-->
+<!--    <br>-->
+<!--</div>-->
+<!-- WHO WE ARE -->
+
 <div class="container">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h1>Об Арене</h1>
+
+    <!-- First Featurette -->
+    <div class="row featurette" id="about">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Airsoft Arena<small>Развлечение для настоящих мужчин</small></h2>
+            <p>Вы интересуетесь страйкболом, но у вас не было возможности попробовать? Хотите активно провести время при этом не отдавая кучу денег на покупку всего необходимого снаряжения? Если да, тогда мы с удовольствием приглашаем Вас постетить Арену!
+            Организаторские deathmatch-бои, бои на пистолетах и дробовиках, захват и освобождение заложников, штурмы и обороны, и еще много других интересных сюжетов только у нас! Вам всегда будут рады у нас вне зависимости от того, есть ли у вас свое снаряжение либо вы играете впервые, есть ли у вас компания или вы пришли сами. Если же вы еще не решились попробовать, приходите на плановые игры в качестве наблюдателя и мы гарантируем, что в следующий раз вы непременно пожелаете присутствовать в качестве игрока на одной из сторон!
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive pull-right" src="/img/logo-big.jpg">
         </div>
     </div>
-    <br/>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="featurette-item">
-                <img src="/img/logo-big.jpg" class="img-responsive center-block">
-            </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Second Featurette -->
+    <div class="row featurette" id="about">
+        <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading"><del>+18</del>   Играй даже если тебе нет 18</h2>
+            <p>Возрастная планка для участия в играх снижена до +14! Обязательным условием является присутствие взрослого, который несет за тебя ответственность и может либо играть с тобой рука об руку, либо с комфортом наблюдать и болеть за твою команду. Удобные места отдыха на 2м этаже не позволят пропустить ни одного интересного игрового момента! </p>
         </div>
-        <div class="col-md-8">
-            <p class="lead">CQB World Crimea - это первая в Крыму страйкбольная база отдыха. CONSECTETUR ADIPISCING ELIT. MAURIS LUCTUS LEO VOLUTPAT MAURIS LUCTUS, EGET RUTRUM SEM EUISMOD. PELLENTESQUE FAUCIBUS PULVINAR NISI, SIT AMET VIVERRA IPSUM PORTTITOR PELLENTESQUE. ALIQUAM PELLENTESQUE FRINGILLA LOBORTIS. PRAESENT NON MAGNA GRAVIDA, VEHICULA NISL AT, ALIQUET LIBERO.</p>
+        <div class="col-md-5 col-md-pull-7">
+            <img class="featurette-image img-responsive pull-right" src="/img/logo-big.jpg">
         </div>
-    </div><!--/row-->
-    <br>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Third Featurette -->
+    <div class="row featurette" id="about">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Приватные мероприятия<small>Корпоративы, дни рождения, тренировки</small></h2>
+            <p>Страйкбол - это в первую очередь командная игра, которая позволит сплотить коллектив и заставит плотно взаимодействовать друг с другом ради победы! Корпоратив, день рождения и даже мальчишник - это отличный повод организовать игру в страйкбол; вы получите море эмоций и отличный заряд бодрости</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive pull-right" src="/img/logo-big.jpg">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
 </div>
-<!-- WHO WE ARE -->
 
 <div class="featurette" id="sec2">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1>Ключевые Особенности</h1>
+                <h1>Почему именно мы</h1>
             </div>
         </div>
         <br/>
@@ -49,7 +93,7 @@ $this->title = 'CQB World';
                 <div class="featurette-item">
                     <img src="/img/feature1.png" class="img-responsive img-rounded center-block">
                     <h4>Уникальность</h4>
-                    <p>CQB World - это первая и единственная в Крыму airsoft арена</p>
+                    <p>Airsoft Арена - это первая и единственная в Крыму страйкбольная база</p>
                 </div>
             </div>
             <div class="col-md-4 text-center">
@@ -187,21 +231,3 @@ $this->title = 'CQB World';
         </div>
     </div>
 </div><!--/container-->
-
-<section class="bg-2">
-    <div class="col-sm-10 col-sm-offset-1 text-center">
-
-        <h1>Keep Going</h1>
-
-    </div>
-</section>
-
-<div class="divider"></div>
-
-
-<!--parallax 2 -->
-<section class="bg-3 text-center">
-    <h1>Bootstrap Parallax</h1>
-    <p class="lead"></p>
-</section>
-<!--/parallax 2-->
