@@ -2,7 +2,7 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=AIRSOFT_CENTER',
+    'dsn' => 'mysql:host=127.0.0.1;dbname=AIRSOFT_CENTER',
     'username' => 'admin',
     'password' => 'admin',
     'charset' => 'utf8',

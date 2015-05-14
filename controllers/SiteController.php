@@ -6,8 +6,10 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
+use yii\helpers\Json;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\AirsoftEvent;
 
 class SiteController extends Controller
 {
@@ -49,24 +51,46 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $events = array();
-        //Testing
-        $Event = new \yii2fullcalendar\models\Event();
-        $Event->id = 1;
-        $Event->title = 'Testing';
-        $Event->start = date('Y-m-d\Th:m:s\Z');
-        $events[] = $Event;
+//        $calendarEvents = array();
+//        foreach( AirsoftEvent::find()->all() as $event)
+//        {
+//            $calendarEvents[] = $event->toCalendarEvent();
+//        }
+        //var_dump($calendarEvents);
+        return $this->render('index');
+    }
 
-        $Event = new \yii2fullcalendar\models\Event();
-        $Event->id = 2;
-        $Event->title = 'Testing';
-        $Event->start = date('Y-m-d\Th:m:s\Z',strtotime('tomorrow 6am'));
-        $events[] = $Event;
-        return $this->render('index', ['events' => $events]);
+    public function actionSchedule($start=NULL,$end=NULL,$_=NULL)
+    {
+//        $events = array();
+//        //Testing
+//        $Event = new \yii2fullcalendar\models\Event();
+//        $Event->id = 1;
+//        $Event->title = 'Пятничный Deathmath';
+//        $Event->backgroundColor = '#333';
+//        $Event->start = date('Y-m-d\Th:m:s\Z');
+//        $events[] = $Event;
+//
+//        $Event = new \yii2fullcalendar\models\Event();
+//        $Event->id = 2;
+//        $Event->title = 'Testing';
+//        $Event->start = date('Y-m-d\Th:m:s\Z',strtotime('tomorrow 6am'));
+//        $events[] = $Event;
+//
+//        header('Content-type: application/json');
+        $calendarEvents = array();
+        foreach( AirsoftEvent::find()->all() as $event)
+        {
+            $calendarEvents[] = $event->toCalendarEvent();
+        }
+        echo Json::encode($calendarEvents);
+
+        Yii::$app->end();
     }
 
     public function actionLogin()
     {
+
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }

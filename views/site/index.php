@@ -38,10 +38,23 @@ $this->title = 'CQB World';
 <!--</div>-->
 <!-- WHO WE ARE -->
 
-<?= \yii2fullcalendar\yii2fullcalendar::widget(array(
-    'events'=> $events,
-)); ?>
+<?= \yii2fullcalendar\yii2fullcalendar::widget([
+    'options' => [
+        'language' => 'fr'
+    ],
+    'clientOptions' => [
+        'eventClick' => new yii\web\JsExpression("function(calEvent, jsEvent, view) {
+                            alert('Event: ' + calEvent.title);
+                            alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+                            alert('View: ' + view.name);
 
+                            // change the border color just for fun
+                            $(this).css('border-color', 'red');
+                        }"),
+    ],
+    'ajaxEvents' => yii\helpers\Url::to(['/site/schedule'])
+]); ?>
+<!-- REFETCH EVENTS -->
 <div class="container">
 
     <!-- First Featurette -->

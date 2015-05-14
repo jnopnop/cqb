@@ -6,6 +6,7 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language'=>'ru-RU',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -27,8 +28,11 @@ $config = [
             'enableStrictParsing' => true,
 //            'suffix' => '.html',
             'rules' => [
-                '' => 'site/index',
-                '<action:\w+>' => 'site/<action>'
+                '<controller>' => '<controller>/index',
+                '<controller>/<action>' => '<controller>/<action>'
+//                '<controller:\w+>' => '<controller>/index',
+//                'dashboard/<action:\w+>' => 'dashboard/<action>',
+//                '<controller:\w+>/<action:\w+>' => '<controller>/<action>'
             ],
         ],
         'mailer' => [

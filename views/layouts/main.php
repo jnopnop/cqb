@@ -52,7 +52,6 @@ AppAsset::register($this);
             ]);
             NavBar::end();
         ?>
-
         <?= $content ?>
 
 <footer>
