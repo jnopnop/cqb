@@ -42,3 +42,13 @@
 .copyright {
     color: #908F8F;
 }
+
+#homepage-carousel img {
+    min-width: 100% !important;
+}
+
+/*#homepage-carousel h1 {*/
+    /*display: inline-block;*/
+    /*background: rgba(20, 50, 1, 0.9);*/
+    /*color: rgb(255, 255, 255);*/
+/*}*/

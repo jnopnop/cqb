@@ -2,18 +2,44 @@
 /* @var $this yii\web\View */
 /* @var $events */
 
-$this->title = 'CQB World';
+$this->title = 'Airsoft Арена';
 //$this->registerJsFile('https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=j1A-wYdZyuK-q7-gDXkz1z2k_2yxCNMP&width=600&height=450');
 ?>
-<!--parallax 1 -->
-<section class="bg-1 text-center">
-    <div class="jumbotron">
-        <h1>Airsoft Арена</h1>
-        <br>
-        <p class="lead">Первая Крымская</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Участвовать</a></p>
+<div id="homepage-carousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#homepage-carousel" data-slide-to="1" class=""></li>
+        <li data-target="#homepage-carousel" data-slide-to="2" class=""></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="/img/header.jpg" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Airsoft Арена</h1>
+                    <p>Первая Крымская Страйкбольная База</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Участвовать</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/img/bg_blueplane.jpg" alt="">
+            <div class="carousel-caption">
+                <h4>Second Slide</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, am id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/img/bg_blueplane.jpg" alt="">
+            <div class="carousel-caption">
+                <h4>Third Slide</h4>
+                <p>Cras justo odio, dapibus ac facilisis in, ultricies vehicula ut id elit.</p>
+            </div>
+        </div>
     </div>
-</section>
+    <a class="left carousel-control" href="#homepage-carousel" data-slide="prev">‹</a>
+    <a class="right carousel-control" href="#homepage-carousel" data-slide="next">›</a>
+</div>
 <!--/parallax 1-->
 
 <!-- WHO WE ARE -->
