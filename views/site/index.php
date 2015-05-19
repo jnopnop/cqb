@@ -3,7 +3,6 @@
 /* @var $events */
 
 $this->title = 'Airsoft Арена';
-//$this->registerJsFile('https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=j1A-wYdZyuK-q7-gDXkz1z2k_2yxCNMP&width=600&height=450');
 ?>
 <div id="homepage-carousel" class="carousel slide">
     <ol class="carousel-indicators">
@@ -17,7 +16,7 @@ $this->title = 'Airsoft Арена';
             <div class="container">
                 <div class="carousel-caption">
                     <h1>Airsoft Арена</h1>
-                    <p>Первая Крымская Страйкбольная База</p>
+                    <h3>Первая Крымская Страйкбольная База</h3>
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Участвовать</a></p>
                 </div>
             </div>
@@ -42,27 +41,38 @@ $this->title = 'Airsoft Арена';
 </div>
 <!--/parallax 1-->
 
+<div class="container">
+    <div class="row featurette vertical-align">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC42MjUiIHk9IjI1MCIgc3R5bGU9ImZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyM3B0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjUwMHg1MDA8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+        </div>
+    </div>
+</div>
 <!-- WHO WE ARE -->
-<!--<div class="container">-->
-<!--    <div class="row">-->
-<!--        <div class="col-md-12 text-center">-->
-<!--            <h1>Об Арене</h1>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <br/>-->
-<!--    <div class="row">-->
-<!--        <div class="col-md-4">-->
-<!--            <div class="featurette-item">-->
-<!--                <img src="/img/logo-big.jpg" class="img-responsive center-block">-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="col-md-8">-->
-<!--            <p class="lead">CQB World Crimea - это первая в Крыму страйкбольная база отдыха. CONSECTETUR ADIPISCING ELIT. MAURIS LUCTUS LEO VOLUTPAT MAURIS LUCTUS, EGET RUTRUM SEM EUISMOD. PELLENTESQUE FAUCIBUS PULVINAR NISI, SIT AMET VIVERRA IPSUM PORTTITOR PELLENTESQUE. ALIQUAM PELLENTESQUE FRINGILLA LOBORTIS. PRAESENT NON MAGNA GRAVIDA, VEHICULA NISL AT, ALIQUET LIBERO.</p>-->
-<!--        </div>-->
-<!--    </div><!--/row-->
-<!--    <br>-->
-<!--</div>-->
-<!-- WHO WE ARE -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Об Арене</h1>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="featurette-item">
+                <img src="/img/logo-big.jpg" class="img-responsive center-block">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <p class="lead">CQB World Crimea - это первая в Крыму страйкбольная база отдыха. CONSECTETUR ADIPISCING ELIT. MAURIS LUCTUS LEO VOLUTPAT MAURIS LUCTUS, EGET RUTRUM SEM EUISMOD. PELLENTESQUE FAUCIBUS PULVINAR NISI, SIT AMET VIVERRA IPSUM PORTTITOR PELLENTESQUE. ALIQUAM PELLENTESQUE FRINGILLA LOBORTIS. PRAESENT NON MAGNA GRAVIDA, VEHICULA NISL AT, ALIQUET LIBERO.</p>
+        </div>
+    </div><!--/row
+    <br>
+</div>
+ WHO WE ARE
 
 <?= \yii2fullcalendar\yii2fullcalendar::widget([
     'options' => [
