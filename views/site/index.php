@@ -4,41 +4,109 @@
 
 $this->title = 'Airsoft Арена';
 ?>
-<div id="homepage-carousel" class="carousel slide">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
     <ol class="carousel-indicators">
-        <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#homepage-carousel" data-slide-to="1" class=""></li>
-        <li data-target="#homepage-carousel" data-slide-to="2" class=""></li>
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     </ol>
+    <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <img src="/img/header.jpg" alt="">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Airsoft Арена</h1>
-                    <h3>Первая Крымская Страйкбольная База</h3>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Участвовать</a></p>
+            <img src="/img/header.jpg" alt="First slide">
+            <div class="header-text">
+                <div class="col-md-12 text-center">
+                    <h1>
+                        <span><strong>Airsoft Арена</strong></span>
+                    </h1>
+                    <br class="hidden-xs">
+                    <h2 class="hidden-xs">
+                        <span>Первая Крымская</span>
+                    </h2>
+                    <br>
+                    <div class="">
+                        <a class="btn btn-theme btn-lg btn-lg-block" href="#">Участвовать</a></div>
                 </div>
-            </div>
+            </div><!-- /header-text -->
         </div>
         <div class="item">
-            <img src="/img/bg_blueplane.jpg" alt="">
-            <div class="carousel-caption">
-                <h4>Second Slide</h4>
-                <p>Cras justo odio, dapibus ac facilisis in, am id dolor id nibh ultricies vehicula ut id elit.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="/img/bg_blueplane.jpg" alt="">
-            <div class="carousel-caption">
-                <h4>Third Slide</h4>
-                <p>Cras justo odio, dapibus ac facilisis in, ultricies vehicula ut id elit.</p>
-            </div>
+            <img src="/img/header.jpg" alt="First slide">
+            <div class="header-text">
+                <div class="col-md-12 text-center">
+                    <h1>
+                        <span><strong>Airsoft Арена</strong></span>
+                    </h1>
+                    <br class="hidden-xs">
+                    <h2 class="hidden-xs">
+                        <span>Первая Крымская</span>
+                    </h2>
+                    <br>
+                    <div class="">
+                        <a class="btn btn-theme btn-lg btn-lg-block" href="#">Участвовать</a></div>
+                </div>
+            </div><!-- /header-text -->
+        </div><div class="item">
+            <img src="/img/header.jpg" alt="First slide">
+            <div class="header-text">
+                <div class="col-md-12 text-center">
+                    <h1>
+                        <span><strong>Airsoft Арена</strong></span>
+                    </h1>
+                    <br class="hidden-xs">
+                    <h2 class="hidden-xs">
+                        <span>Первая Крымская</span>
+                    </h2>
+                    <br>
+                    <div class="">
+                        <a class="btn btn-theme btn-lg btn-lg-block" href="#">Участвовать</a></div>
+                </div>
+            </div><!-- /header-text -->
         </div>
     </div>
-    <a class="left carousel-control" href="#homepage-carousel" data-slide="prev">‹</a>
-    <a class="right carousel-control" href="#homepage-carousel" data-slide="next">›</a>
-</div>
+    <!-- Controls -->
+<!--    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">-->
+<!--        <span class="glyphicon glyphicon-chevron-left"></span>-->
+<!--    </a>-->
+<!--    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">-->
+<!--        <span class="glyphicon glyphicon-chevron-right"></span>-->
+<!--    </a>-->
+</div><!-- /carousel -->
+<!--<div id="homepage-carousel" class="carousel slide">-->
+<!--    <ol class="carousel-indicators">-->
+<!--        <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>-->
+<!--        <li data-target="#homepage-carousel" data-slide-to="1" class=""></li>-->
+<!--        <li data-target="#homepage-carousel" data-slide-to="2" class=""></li>-->
+<!--    </ol>-->
+<!--    <div class="carousel-inner">-->
+<!--        <div class="item active">-->
+<!--            <img src="/img/header.jpg" alt="">-->
+<!--            <div class="container">-->
+<!--                <div class="carousel-caption">-->
+<!--                    <h1>Airsoft Арена</h1>-->
+<!--                    <h3>Первая Крымская Страйкбольная База</h3>-->
+<!--                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Участвовать</a></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            <img src="/img/bg_blueplane.jpg" alt="">-->
+<!--            <div class="carousel-caption">-->
+<!--                <h4>Second Slide</h4>-->
+<!--                <p>Cras justo odio, dapibus ac facilisis in, am id dolor id nibh ultricies vehicula ut id elit.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="item">-->
+<!--            <img src="/img/bg_blueplane.jpg" alt="">-->
+<!--            <div class="carousel-caption">-->
+<!--                <h4>Third Slide</h4>-->
+<!--                <p>Cras justo odio, dapibus ac facilisis in, ultricies vehicula ut id elit.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <a class="left carousel-control" href="#homepage-carousel" data-slide="prev"></a>-->
+<!--    <a class="right carousel-control" href="#homepage-carousel" data-slide="next"></a>-->
+<!--</div>-->
 <!--/parallax 1-->
 
 <div class="container">
@@ -69,6 +137,7 @@ $this->title = 'Airsoft Арена';
         <div class="col-md-8">
             <p class="lead">CQB World Crimea - это первая в Крыму страйкбольная база отдыха. CONSECTETUR ADIPISCING ELIT. MAURIS LUCTUS LEO VOLUTPAT MAURIS LUCTUS, EGET RUTRUM SEM EUISMOD. PELLENTESQUE FAUCIBUS PULVINAR NISI, SIT AMET VIVERRA IPSUM PORTTITOR PELLENTESQUE. ALIQUAM PELLENTESQUE FRINGILLA LOBORTIS. PRAESENT NON MAGNA GRAVIDA, VEHICULA NISL AT, ALIQUET LIBERO.</p>
         </div>
+    </div>
     </div><!--/row
     <br>
 </div>
@@ -271,11 +340,11 @@ $this->title = 'Airsoft Арена';
             <div id="map"></div>
         </div>
         <div class="col-lg-4">
-            <h4>ADDRESS<br>Minsk - Head Office</h4>
+            <h4>Адрес<br>Симферополь - Главный Офис</h4>
             <br>
             <p>
-                Business Center, SomeAve 987,<br>
-                Minsk, Belarus.
+                ул. Узловая, 20<br>
+                Симферополь, Республика Крым, Российская Федерация.
             </p>
             <p>
                 P: +55 4839-4390<br>

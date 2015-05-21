@@ -195,6 +195,7 @@ h1 {
 
 footer {
     padding: 20px 0;
+    background: rgba(51, 51, 51, 0.75);
 }
 
 /* -- end custom css for Bootstrap 3.x --*/

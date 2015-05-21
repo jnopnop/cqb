@@ -25,7 +25,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
         <?php
             NavBar::begin([
-                'brandLabel' => 'Airsoft Арена',
+                'brandLabel' => '<img src="/img/navbar-logo.png">',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-inverse navbar-fixed-top',
@@ -59,7 +59,7 @@ AppAsset::register($this);
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-sm-4">
-                <img src="/img/logo-big.jpg" class="img-responsive center-block">
+                <img src="/img/logo-footer.png" class="img-responsive center-block">
             </div>
             <div class="col-lg-4 col-sm-4">
                 <h4>Мы в Соцсетях</h4>
@@ -69,9 +69,9 @@ AppAsset::register($this);
             </div>
             <div class="col-lg-4 col-sm-4">
                 <h4>Связь с Нами</h4>
-                <p><b>CQB World Крым</b><br>
+                <p><b>Airsoft Арена Крым</b><br>
                     <span class="glyphicon glyphicon-map-marker"></span> 295047 Узловая 20, РК РФ <br>
-                    <span class="glyphicon glyphicon-envelope"></span> contact@cqb-world.local<br>
+                    <span class="glyphicon glyphicon-envelope"></span> contact@airsoft-arena.ru<br>
                     <span class="glyphicon glyphicon-earphone"></span> +7 (978) 878-87-87</p>
             </div>
         </div>
