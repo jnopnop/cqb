@@ -108,7 +108,28 @@ $this->title = 'Airsoft Арена';
 <!--    <a class="right carousel-control" href="#homepage-carousel" data-slide="next"></a>-->
 <!--</div>-->
 <!--/parallax 1-->
+<?= \yii2fullcalendar\yii2fullcalendar::widget([
+    'options' => [
+        'lang' => 'ru',
+    ],
+    'header' => [
+        'left' => '',
+        'center' => 'title',
+        'right' => ''
+    ],
+    'clientOptions' => [
+        'aspectRatio' => 2,
+        'eventClick' => new yii\web\JsExpression("function(calEvent, jsEvent, view) {
+                            alert('Event: ' + calEvent.title);
+                            alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+                            alert('View: ' + view.name);
 
+                            // change the border color just for fun
+                            $(this).css('border-color', 'red');
+                        }"),
+    ],
+    'ajaxEvents' => yii\helpers\Url::to(['/site/schedule'])
+]); ?>
 <div class="container">
     <div class="row featurette vertical-align">
         <div class="col-md-7">
@@ -142,23 +163,6 @@ $this->title = 'Airsoft Арена';
     <br>
 </div>
  WHO WE ARE
-
-<?= \yii2fullcalendar\yii2fullcalendar::widget([
-    'options' => [
-        'language' => 'fr'
-    ],
-    'clientOptions' => [
-        'eventClick' => new yii\web\JsExpression("function(calEvent, jsEvent, view) {
-                            alert('Event: ' + calEvent.title);
-                            alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
-                            alert('View: ' + view.name);
-
-                            // change the border color just for fun
-                            $(this).css('border-color', 'red');
-                        }"),
-    ],
-    'ajaxEvents' => yii\helpers\Url::to(['/site/schedule'])
-]); ?>
 <!-- REFETCH EVENTS -->
 <div class="container">
 
