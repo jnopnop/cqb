@@ -1,3 +1,12 @@
+ /*Navbar */
+* {
+    text-decoration: none !important;
+}
+nav {
+    /*noinspection CssUnknownTarget*/
+    background: url('/img/pixel1.png');
+}
+
 .jumbotron {
     background: none;
 }
@@ -47,24 +56,24 @@
     min-width: 100% !important;
 }
 
-/*#homepage-carousel h1 {*/
-    /*display: inline-block;*/
-    /*background: rgba(20, 50, 1, 0.9);*/
-    /*color: rgb(255, 255, 255);*/
+#homepage-carousel h1 {
+    display: inline-block;
+    background: rgba(20, 50, 1, 0.9);
+    color: rgb(255, 255, 255);
+}
+
+/*.vertical-align {*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
 /*}*/
 
-.vertical-align {
-    display: flex;
-    flex-direction: row;
-}
-
-.vertical-align > [class^="col-"],
-.vertical-align > [class*=" col-"] {
-    display: flex;
-    align-items: center;
-    /*justify-content: center; *//* Optional, to align inner items*/
-                              /*horizontally inside the column */
-}
+/*.vertical-align > [class^="col-"],*/
+/*.vertical-align > [class*=" col-"] {*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;  Optional, to align inner items*/
+                              /*horizontally inside the column*/
+/*}*/
 
 div#homepage-carousel {
     margin-top: 50px;
@@ -73,9 +82,9 @@ div#homepage-carousel {
 #carousel-example-generic {
     margin-top: 50px;
 }
-/*
-}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
-*/
+
+/*}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}*/
+
 
 .header-text {
     position: absolute;
@@ -87,7 +96,7 @@ div#homepage-carousel {
 }
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */
+ /*Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
     .header-text {
@@ -95,38 +104,42 @@ div#homepage-carousel {
     }
 }
 
-/* Extra Small Devices, Phones */
+ /*Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
     .header-text {
         top: 10%;
     }
 }
 
-/* Small Devices, Tablets */
+ /*Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .header-text {
         top: 20%;
     }
 }
 
-/* Medium Devices, Desktops */
+ /*Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .header-text {
         top: 30%;
     }
 }
 
-/* Large Devices, Wide Screens */
+ /*Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
     .header-text {
-        top: 50%;
+        top: 40%;
+    }
+
+    .header-text h1 {
+        font-size: 80px;
     }
 }
 
-/*
------------------------------------------------------------------
-*/
-/* Carousel Styles */
+
+/*-----------------------------------------------------------------*/
+
+ /*Carousel Styles */
 .carousel-indicators .active {
     background-color: #2980b9;
 }
@@ -189,15 +202,15 @@ div#homepage-carousel {
     filter: alpha(opacity=70);
 }
 
-/* Carousel Header Styles */
+ /*Carousel Header Styles */
 
 
-.header-text h1 {
-    font-size: 40px;
-}
+/*.header-text h1 {*/
+    /*font-size: 40px;*/
+/*}*/
 
 .header-text h1 span {
-    background-color: #2980b9;
+    background-color: #22b971;
     padding: 10px;
 }
 
@@ -223,4 +236,34 @@ div#homepage-carousel {
     color: #000;
     background-color: #fff;
     border-color: #fff;
+}
+
+/*FULLCALENDAR*/
+.fc-day {
+    font-size: xx-large !important;
+}
+
+.fc-today {
+    background: rgba(52, 252, 56, 0.39) !important;
+}
+
+div.fc-center {
+    background: rgba(27, 209, 105, 0.73);
+    padding: 5px;
+}
+
+.fc-unthemed th, .fc-unthemed td, .fc-unthemed hr, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-row, .fc-unthemed .fc-popover {
+    border-color: #0000aa;
+}
+
+.event-detail, .event-detail div {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+.center-block {
+    margin: 0 auto;
 }

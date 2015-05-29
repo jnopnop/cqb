@@ -1,7 +1,3 @@
-(function($) {
-
-}(jQuery));
-
 var myMap;
 ymaps.ready(init);
 function init () {
@@ -19,3 +15,11 @@ function init () {
             iconColor: '#0095b6'
         }));
 }
+
+function showEventDetail(eventid) {
+    $.getJSON("/site/schedule-event?id=" + eventid, function( data ) {
+        console.log(data);
+        $('.modal-title').text(data.id + " " + data.type + " " + data.title + " " + data.start + " " + data.end)
+        $('#fsModal').modal('show');
+    });
+};

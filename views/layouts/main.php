@@ -61,13 +61,13 @@ AppAsset::register($this);
             <div class="col-lg-4 col-sm-4">
                 <img src="/img/logo-footer.png" class="img-responsive center-block">
             </div>
-            <div class="col-lg-4 col-sm-4">
+            <div class="col-lg-4 col-sm-4 text-center">
                 <h4>Мы в Соцсетях</h4>
                 <a href="#"><img src="/img/facebook.png" alt="vk"></a>
                 <a href="#"><img src="/img/twitter.png" alt="twitter"></a>
                 <a href="#"><img src="/img/instagram.png" alt="instagram"></a>
             </div>
-            <div class="col-lg-4 col-sm-4">
+            <div class="col-lg-4 col-sm-4 text-center">
                 <h4>Связь с Нами</h4>
                 <p><b>Airsoft Арена Крым</b><br>
                     <span class="glyphicon glyphicon-map-marker"></span> 295047 Узловая 20, РК РФ <br>

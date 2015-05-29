@@ -2,8 +2,10 @@
 /* @var $this yii\web\View */
 /* @var $events */
 
+\app\assets\ArenaCalendarAsset::register($this);
 $this->title = 'Airsoft Арена';
 ?>
+<!-- CAROUSEL -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -71,76 +73,8 @@ $this->title = 'Airsoft Арена';
 <!--    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">-->
 <!--        <span class="glyphicon glyphicon-chevron-right"></span>-->
 <!--    </a>-->
-</div><!-- /carousel -->
-<!--<div id="homepage-carousel" class="carousel slide">-->
-<!--    <ol class="carousel-indicators">-->
-<!--        <li data-target="#homepage-carousel" data-slide-to="0" class="active"></li>-->
-<!--        <li data-target="#homepage-carousel" data-slide-to="1" class=""></li>-->
-<!--        <li data-target="#homepage-carousel" data-slide-to="2" class=""></li>-->
-<!--    </ol>-->
-<!--    <div class="carousel-inner">-->
-<!--        <div class="item active">-->
-<!--            <img src="/img/header.jpg" alt="">-->
-<!--            <div class="container">-->
-<!--                <div class="carousel-caption">-->
-<!--                    <h1>Airsoft Арена</h1>-->
-<!--                    <h3>Первая Крымская Страйкбольная База</h3>-->
-<!--                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Участвовать</a></p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="item">-->
-<!--            <img src="/img/bg_blueplane.jpg" alt="">-->
-<!--            <div class="carousel-caption">-->
-<!--                <h4>Second Slide</h4>-->
-<!--                <p>Cras justo odio, dapibus ac facilisis in, am id dolor id nibh ultricies vehicula ut id elit.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="item">-->
-<!--            <img src="/img/bg_blueplane.jpg" alt="">-->
-<!--            <div class="carousel-caption">-->
-<!--                <h4>Third Slide</h4>-->
-<!--                <p>Cras justo odio, dapibus ac facilisis in, ultricies vehicula ut id elit.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <a class="left carousel-control" href="#homepage-carousel" data-slide="prev"></a>-->
-<!--    <a class="right carousel-control" href="#homepage-carousel" data-slide="next"></a>-->
-<!--</div>-->
-<!--/parallax 1-->
-<?= \yii2fullcalendar\yii2fullcalendar::widget([
-    'options' => [
-        'lang' => 'ru',
-    ],
-    'header' => [
-        'left' => '',
-        'center' => 'title',
-        'right' => ''
-    ],
-    'clientOptions' => [
-        'aspectRatio' => 2,
-        'eventClick' => new yii\web\JsExpression("function(calEvent, jsEvent, view) {
-                            alert('Event: ' + calEvent.title);
-                            alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
-                            alert('View: ' + view.name);
-
-                            // change the border color just for fun
-                            $(this).css('border-color', 'red');
-                        }"),
-    ],
-    'ajaxEvents' => yii\helpers\Url::to(['/site/schedule'])
-]); ?>
-<div class="container">
-    <div class="row featurette vertical-align">
-        <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC42MjUiIHk9IjI1MCIgc3R5bGU9ImZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyM3B0O2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjUwMHg1MDA8L3RleHQ+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-        </div>
-    </div>
 </div>
+
 <!-- WHO WE ARE -->
 <div class="container">
     <div class="row">
@@ -152,21 +86,17 @@ $this->title = 'Airsoft Арена';
     <div class="row">
         <div class="col-md-4">
             <div class="featurette-item">
-                <img src="/img/logo-big.jpg" class="img-responsive center-block">
+                <img src="http://placehold.it/300" class="img-responsive center-block">
             </div>
         </div>
         <div class="col-md-8">
             <p class="lead">CQB World Crimea - это первая в Крыму страйкбольная база отдыха. CONSECTETUR ADIPISCING ELIT. MAURIS LUCTUS LEO VOLUTPAT MAURIS LUCTUS, EGET RUTRUM SEM EUISMOD. PELLENTESQUE FAUCIBUS PULVINAR NISI, SIT AMET VIVERRA IPSUM PORTTITOR PELLENTESQUE. ALIQUAM PELLENTESQUE FRINGILLA LOBORTIS. PRAESENT NON MAGNA GRAVIDA, VEHICULA NISL AT, ALIQUET LIBERO.</p>
         </div>
     </div>
-    </div><!--/row
-    <br>
 </div>
- WHO WE ARE
-<!-- REFETCH EVENTS -->
-<div class="container">
 
-    <!-- First Featurette -->
+<!-- FEATURES -->
+<div class="container">
     <div class="row featurette" id="about">
         <div class="col-md-7">
             <h2 class="featurette-heading">Airsoft Arena<small>Развлечение для настоящих мужчин</small></h2>
@@ -175,39 +105,38 @@ $this->title = 'Airsoft Арена';
             </p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive pull-right" src="/img/logo-big.jpg">
+            <img class="featurette-image img-responsive pull-right" src="http://placehold.it/300">
         </div>
     </div>
 
     <hr class="featurette-divider">
 
-    <!-- Second Featurette -->
     <div class="row featurette" id="about">
-        <div class="col-md-7 col-md-push-5">
+        <div class="col-md-7 col-lg-pull-5">
             <h2 class="featurette-heading"><del>+18</del>   Играй даже если тебе нет 18</h2>
             <p>Возрастная планка для участия в играх снижена до +14! Обязательным условием является присутствие взрослого, который несет за тебя ответственность и может либо играть с тобой рука об руку, либо с комфортом наблюдать и болеть за твою команду. Удобные места отдыха на 2м этаже не позволят пропустить ни одного интересного игрового момента! </p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive pull-right" src="/img/logo-big.jpg">
+            <img class="featurette-image img-responsive pull-right" src="http://placehold.it/300">
         </div>
     </div>
 
     <hr class="featurette-divider">
 
-    <!-- Third Featurette -->
     <div class="row featurette" id="about">
         <div class="col-md-7">
             <h2 class="featurette-heading">Приватные мероприятия<small>Корпоративы, дни рождения, тренировки</small></h2>
             <p>Страйкбол - это в первую очередь командная игра, которая позволит сплотить коллектив и заставит плотно взаимодействовать друг с другом ради победы! Корпоратив, день рождения и даже мальчишник - это отличный повод организовать игру в страйкбол; вы получите море эмоций и отличный заряд бодрости</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive pull-right" src="/img/logo-big.jpg">
+            <img class="featurette-image img-responsive pull-right" src="http://placehold.it/300">
         </div>
     </div>
 
     <hr class="featurette-divider">
 </div>
 
+<!-- PORTFOLIO -->
 <div class="featurette" id="sec2">
     <div class="container">
         <div class="row">
@@ -265,40 +194,7 @@ $this->title = 'Airsoft Арена';
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>Последние Новости</h1>
-        </div>
-        <div class="col-lg-8">
-            <p>Свежачок из Жизни Арены</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <img class="img-responsive" src="/img/post01.jpg" alt="">
-            <h3><a href="#">Designing for the reader experience</a></h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            <p><a href="#"><i class="fa fa-link"></i> Read More</a></p>
-        </div>
-        <div class="col-md-4">
-            <img class="img-responsive" src="/img/post02.jpg" alt="">
-            <h3><a href="#">Designing for the reader experience</a></h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            <p><a href="#"><i class="fa fa-link"></i> Read More</a></p>
-        </div>
-        <div class="col-md-4">
-            <img class="img-responsive" src="/img/post03.jpg" alt="">
-            <h3><a href="#">Designing for the reader experience</a></h3>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            <p><a href="#"><i class="fa fa-link"></i> Read More</a></p>
-        </div>
-    </div><!--/row-->
-
-    <br>
-
-</div><!--/container-->
-
+<!-- GALLERY -->
 <section class="no-padding" id="portfolio">
     <div class="container-fluid">
         <div class="row no-gutter">
@@ -338,6 +234,97 @@ $this->title = 'Airsoft Арена';
 
 <div class="divider"></div>
 
+<!-- CALENDAR -->
+<section class="no-padding fullcalendar-container" id="event-schedule">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Расписание мероприятий</h1>
+        </div>
+    </div>
+    <?= \yii2fullcalendar\yii2fullcalendar::widget([
+        'options' => [
+            'lang' => 'ru',
+        ],
+        'header' => [
+            'left' => '',
+            'center' => 'title',
+            'right' => ''
+        ],
+        'clientOptions' => [
+            'aspectRatio' => 2,
+            'eventClick' => new yii\web\JsExpression("function(calEvent, jsEvent, view) {
+                            //alert('Event: ' + calEvent.title);
+                            //alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+                            //alert('View: ' + view.name);
+                            showEventDetail(calEvent.id);
+                            // change the border color just for fun
+                            $(this).css('border-color', 'red');
+                        }"),
+        ],
+        'ajaxEvents' => yii\helpers\Url::to(['/site/schedule/'])
+    ]); ?>
+</section>
+
+<div class="divider"></div>
+
+<!-- EVENT DETAIL -->
+    <div class="row event-detail">
+        <div class="col-md-12 text-center">
+            <h1>Об Арене</h1>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="featurette-item">
+                <img src="http://placehold.it/300" class="img-responsive center-block">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <p class="lead">CQB World Crimea - это первая в Крыму страйкбольная база отдыха. CONSECTETUR ADIPISCING ELIT. MAURIS LUCTUS LEO VOLUTPAT MAURIS LUCTUS, EGET RUTRUM SEM EUISMOD. PELLENTESQUE FAUCIBUS PULVINAR NISI, SIT AMET VIVERRA IPSUM PORTTITOR PELLENTESQUE. ALIQUAM PELLENTESQUE FRINGILLA LOBORTIS. PRAESENT NON MAGNA GRAVIDA, VEHICULA NISL AT, ALIQUET LIBERO.</p>
+        </div>
+    </div>
+
+<div class="divider"></div>
+
+<!-- NEWS -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Последние Новости</h1>
+        </div>
+        <div class="col-lg-8">
+            <p>Свежачок из Жизни Арены</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="/img/post01.jpg" alt="">
+            <h3><a href="#">Designing for the reader experience</a></h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <p><a href="#"><i class="fa fa-link"></i> Read More</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-responsive" src="/img/post02.jpg" alt="">
+            <h3><a href="#">Designing for the reader experience</a></h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <p><a href="#"><i class="fa fa-link"></i> Read More</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-responsive" src="/img/post03.jpg" alt="">
+            <h3><a href="#">Designing for the reader experience</a></h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <p><a href="#"><i class="fa fa-link"></i> Read More</a></p>
+        </div>
+    </div><!--/row-->
+
+    <br>
+
+</div><!--/container-->
+
+<div class="divider"></div>
+
+<!-- MAP, CONTACTS -->
 <div class="container-fluid contacts-container">
     <div class="row">
         <div class="col-lg-8 map-container">
@@ -359,3 +346,77 @@ $this->title = 'Airsoft Арена';
         </div>
     </div>
 </div><!--/container-->
+
+<!-- --------------MODAL------------------ -->
+<!-- modal -->
+<div id="fsModal"
+     class="modal animated bounceIn"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true">
+
+    <!-- dialog -->
+    <div class="modal-dialog">
+
+        <!-- content -->
+        <div class="modal-content">
+
+            <!-- header -->
+            <div class="modal-header">
+                <h1 id="myModalLabel"
+                    class="modal-title">
+                    Modal title
+                </h1>
+            </div>
+            <!-- header -->
+
+            <!-- body -->
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-responsive center-block" src="http://placehold.it/300">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>The last word drumguish irish flag, hurricane, brandy manhattan. Lemon drop, pulteney fleischmann's seven and seven irish flag pisco sour metaxas, hayride, bellini. French 75 wolfram christian brothers, calvert painkiller, horse's neck old bushmill's gin pahit. Monte alban glendullan, edradour redline cherry herring anisette godmother, irish flag polish martini glen spey. Abhainn dearg bloody mary amaretto sour, ti punch black cossack port charlotte tequila slammer? Rum swizzle glen keith j & b sake bomb harrogate nights 7 crown! Hairy virgin tomatin lord calvert godmother wolfschmitt brass monkey aberfeldy caribou lou. Macuá, french 75 three wise men.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <a href="#form-schedule-modal" class="btn btn-secondary" data-toggle="collapse">
+                            Default
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="divider"></div>
+                    <div class="col-lg-12">
+                        <div class="collapse" id="form-schedule-modal">
+                            <div class="well">
+                                <p>The last word drumguish irish flag, hurricane, brandy manhattan. Lemon drop, pulteney fleischmann's seven and seven irish flag pisco sour metaxas, hayride, bellini. French 75 wolfram christian brothers, calvert painkiller, horse's neck old bushmill's gin pahit. Monte alban glendullan, edradour redline cherry herring anisette godmother, irish flag polish martini glen spey. Abhainn dearg bloody mary amaretto sour, ti punch black cossack port charlotte tequila slammer? Rum swizzle glen keith j & b sake bomb harrogate nights 7 crown! Hairy virgin tomatin lord calvert godmother wolfschmitt brass monkey aberfeldy caribou lou. Macuá, french 75 three wise men.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- body -->
+
+            <!-- footer -->
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                        data-dismiss="modal">
+                    close
+                </button>
+            </div>
+            <!-- footer -->
+
+        </div>
+        <!-- content -->
+
+    </div>
+    <!-- dialog -->
+
+</div>
+<!-- modal -->

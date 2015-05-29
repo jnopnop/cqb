@@ -60,6 +60,12 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    public function  actionScheduleEvent($id) {
+        $Event = AirsoftEvent::find()->where(['id' => $id])->one();
+        echo Json::encode($Event);
+        Yii::$app->end();
+    }
+
     public function actionSchedule($start=NULL,$end=NULL,$_=NULL)
     {
 //        $events = array();
